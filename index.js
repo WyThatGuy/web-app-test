@@ -1,10 +1,18 @@
 var notebox = document.getElementById("notebox")
+var notes = document.getElementById("notes")
 
-notebox.addEventListener("submit", (event) => {
+function newnote () {
+    window.localStorage.setItem(window.localStorage.length, notebox.value)
 
-    event.preventDefault();
+    notebox.value = ""
+}
 
-    window.localStorage.setItem(window.localStorage.length, notebox.innerText)
+function loadNote(text) {
+    var note = document.createElement("p")
+    note.innerHTML = text
+    notes.appendChild(note)
+}
 
-    notebox.reset()
-})
+for (let i = 0; i < window.localStorage.length; i++) {
+    loadNote(window.localStorage.getItem(i))
+}
