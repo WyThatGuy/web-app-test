@@ -1,0 +1,10 @@
+{
+    "name": "My PWA",
+    "icons": [
+      {
+        "src": "patch.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
