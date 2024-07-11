@@ -3,7 +3,7 @@ var notes = document.getElementById("notes")
 
 function newnote () {
     window.localStorage.setItem(window.localStorage.length, notebox.value)
-    loadNote()
+    loadNote(notebox.value)
     notebox.value = ""
 }
 
