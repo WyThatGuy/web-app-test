@@ -1,6 +1,6 @@
 {
-    "name": "Skibidi Notes App",
-    "short_name": "SKBDNotes",
+    "name": "Offline Games",
+    "short_name": "Offliners",
     "start_url": "/web-app-test",
     "display_override": ["fullscreen", "minimal-ui"],
     "display": "standalone",

@@ -16,3 +16,4 @@ function loadNote(text) {
 for (let i = 0; i < window.localStorage.length; i++) {
     loadNote(window.localStorage.getItem(i))
 }
+
